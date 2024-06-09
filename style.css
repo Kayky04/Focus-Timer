@@ -1,0 +1,89 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root{
+    --bg-color: #121214;
+    --primary-color: #42d3ff;
+    --base-color: 194;
+    --primary-light: hsla(var(--base-color), 100%, 63%, 0.13); 
+    --text-color: #ffffff;
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    min-height: 100vh;
+}
+
+#timer{
+    font-size: 8.8rem;
+    display: flex;
+    margin-bottom: 1.6rem;
+}
+
+.hide{
+    display: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    width: 100px;
+    height: 100px;
+}
+
+main{
+    align-self: end;
+    justify-self: center;
+}
+
+.img{
+    width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+    height: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+.img:hover{
+    background-color: #64919f;
+    border-radius: 37px;
+}
+
+.play,
+.pause,
+.sound-on{
+    color: var(--primary-color);
+}
+#controls{
+    background-color: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    gap: 3.2rem;
+    width: clamp(10rem, 10rem + 30vw, 22.8rem);
+    height: clamp(8rem, 5rem + 10vw, 10.8rem);
+}
+
+footer{
+    align-self: end;
+    justify-self: end;
+    padding: 0 4rem 3.2rem 0;
+}
